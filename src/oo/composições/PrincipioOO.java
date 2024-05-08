@@ -19,13 +19,34 @@ public class PrincipioOO {
     protected: só pode ser acessado por classes do mesmo package ou por herança
 
 
+
     Herança: reuso de código. Exemplo: um filho receber caracteristiacas herdadas da mãe
+    Composição x Herança
+    Super classe: casse mãe; sub classe: classe filha;
+    Todo comportamento que a super classe tem, as suas subclasses terão
+    Em java toda classe só pode ser herdeira uma uma unica classe, em outra linguagens nn
+    Quando uma classe herda um método, é possível reescrever esse método na classe filha
+    aula 29 minuto 19:30
+
 
     Polimorfismo: especificação, ou seja, utilizar algo para diferentes finalidades
     . Está ligada a herança.
+    Estático e dinamico
+    Estático: sobrecarga, exemplo: mesmo método com assinaturas diferentes
+    Dinamico: precisa da herança pra ocorrer
+        exemplo:
+    Superclasse: carro
+    subclasses: civic e corolla
+    void estacionar(Civic c){}
+    void estacionar(Carro c){} dessa forma, tornando mais genérica, ocorre o polimorfismo dinamico
+    o polimorfismo dinamico tbm pode ser usado na instanciação de objetos
 
-    Abstração: capacidade de resumir, ocultar elementos que não são necessários
+
+    Abstração: capacidade de simplificar, resumir, ocultar elementos que não são necessários
     para o algoritmo.
+    Pegar coisas do mundo real e "traduzir pro software"
+    depende muito da complexidade do sistema
+
 
      */
 
