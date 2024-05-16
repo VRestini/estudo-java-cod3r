@@ -2,9 +2,7 @@ package oo.composições.herança;
 
 public class Jogo {
     public static void main(String[] args) {
-        Heroi heroi = new Heroi();
-        heroi.x = 20;
-        heroi.y = 10;
+        Heroi heroi = new Heroi(20, 10);
 
         Vilao monstro = new Vilao();
         monstro.x = 20;

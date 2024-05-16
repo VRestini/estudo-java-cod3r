@@ -1,8 +1,12 @@
 package oo.composições.herança.desafio;
 
 public class Carro {
+    public static int velocidadeMaxima;
     private Integer velocidadeAtual = 0;
 
+    Carro(int velocidadeMaxima){
+        velocidadeMaxima = velocidadeMaxima;
+    }
     public Integer getVelocidadeAtual() {
         return velocidadeAtual;
     }
@@ -12,7 +16,12 @@ public class Carro {
     }
 
     public boolean acelerar(Integer velocidade){
-        this.velocidadeAtual += velocidade;
+        if (velocidadeAtual > velocidadeMaxima){
+            velocidadeAtual = velocidadeMaxima;
+        }else {
+            this.velocidadeAtual += velocidade;
+        }
+
         return true;
     }
     public boolean frear(){
